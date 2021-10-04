@@ -135,7 +135,7 @@ namespace LinqToLdap
                     : new LdapConnection(identifier, Credentials);
 
                 connection.SessionOptions.ProtocolVersion = LdapProtocolVersion;
-                connection.SessionOptions.SecureSocketLayer = UsesSsl;
+                //connection.SessionOptions.SecureSocketLayer = UsesSsl;
                 connection.Timeout = Timeout;
 
                 if (Logger != null && Logger.TraceEnabled) Logger.Trace("Connection Built");
